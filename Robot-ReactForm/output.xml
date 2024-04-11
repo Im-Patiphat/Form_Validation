@@ -1,357 +1,472 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-30T03:21:16.199738" rpa="false" schemaversion="5">
-<suite id="s1" name="Reactform" source="D:\work\FormValidation_Angkan\Robot-ReactForm\reactform.robot">
-<test id="s1-t1" name="Successfully signed" line="36">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-12T00:10:29.476713" rpa="false" schemaversion="5">
+<suite id="s1" name="Reactform" source="D:\work\Form_Validation\Robot-ReactForm\reactform.robot">
+<test id="s1-t1" name="Check Invalid Name TH" line="52">
 <kw name="Open SignupForm">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:16.365101" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
-<arg>http://localhost:5173/</arg>
+<msg time="2024-04-12T00:10:29.646534" level="INFO">Opening browser 'Chrome' to base url 'https://signup-form-jet-chi.vercel.app/'.</msg>
+<arg>https://signup-form-jet-chi.vercel.app/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-30T03:21:16.365101" elapsed="1.987435"/>
+<status status="PASS" start="2024-04-12T00:10:29.646534" elapsed="1.740293"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:16.364070" elapsed="1.988466"/>
+<status status="PASS" start="2024-04-12T00:10:29.646534" elapsed="1.740293"/>
 </kw>
 <kw name="Wait Until Page">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=root</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-30T03:21:18.356567" elapsed="0.030562"/>
+<status status="PASS" start="2024-04-12T00:10:31.386827" elapsed="0.013299"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:18.355545" elapsed="0.031584"/>
-</kw>
-<kw name="Input TH information">
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:18.388641" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
-<arg>id=nameTitleTha</arg>
-<arg>${Name_Title_TH_1}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-03-30T03:21:18.388641" elapsed="0.216840"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:18.606513" level="INFO">Typing text 'ปฏิพัทธ์' into text field 'id=firstnameTha'.</msg>
-<arg>id=firstnameTha</arg>
-<arg>${Firstname_TH}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:18.605481" elapsed="0.281127"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:18.887609" level="INFO">Typing text 'รัตโนสถ' into text field 'id=lastnameTha'.</msg>
-<arg>id=lastnameTha</arg>
-<arg>${Lastname_TH}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:18.886608" elapsed="0.159132"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:18.387129" elapsed="0.658611"/>
-</kw>
-<kw name="Input EN information">
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:19.046740" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
-<arg>id=nameTitleEng</arg>
-<arg>${Name_Title_EN_1}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-03-30T03:21:19.046740" elapsed="0.082920"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:19.130662" level="INFO">Typing text 'Patiphat' into text field 'id=firstnameEng'.</msg>
-<arg>id=firstnameEng</arg>
-<arg>${Firstname_EN}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:19.130662" elapsed="0.162178"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:19.292840" level="INFO">Typing text 'Rattanosot' into text field 'id=lastnameEng'.</msg>
-<arg>id=lastnameEng</arg>
-<arg>${Lastname_EN}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:19.292840" elapsed="0.179990"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:19.046740" elapsed="0.426090"/>
-</kw>
-<kw name="Input Birthday">
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:19.473829" level="INFO">Selecting options from selection list 'id=birthDate' by value 5.</msg>
-<arg>id=birthDate</arg>
-<arg>${Day}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-03-30T03:21:19.473829" elapsed="0.078917"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:19.552746" level="INFO">Selecting options from selection list 'id=birthMonth' by label กันยายน.</msg>
-<arg>id=birthMonth</arg>
-<arg>${Month}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-03-30T03:21:19.552746" elapsed="0.079019"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:19.631765" level="INFO">Selecting options from selection list 'id=birthYear' by label 2546.</msg>
-<arg>id=birthYear</arg>
-<arg>${YearB.E.}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-03-30T03:21:19.631765" elapsed="0.090834"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:19.472830" elapsed="0.250769"/>
-</kw>
-<kw name="Input ID Card">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:19.724600" level="INFO">Typing text '1729800289811' into text field 'id=idCard'.</msg>
-<arg>id=idCard</arg>
-<arg>${IDcard_13}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:19.724600" elapsed="0.222473"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:19.723599" elapsed="0.223474"/>
-</kw>
-<kw name="Input Password">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:19.949588" level="INFO">Typing text 'IsNotPassword8' into text field 'id=password'.</msg>
-<arg>id=password</arg>
-<arg>${Password8}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:19.948581" elapsed="0.202249"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:19.948581" elapsed="0.202249"/>
-</kw>
-<kw name="Input Phone Number">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:20.151828" level="INFO">Typing text '0800781563' into text field 'id=mobile'.</msg>
-<arg>id=mobile</arg>
-<arg>${Phone_number}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:20.151828" elapsed="0.188358"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:20.151828" elapsed="0.188358"/>
-</kw>
-<kw name="Input Email">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:20.342193" level="INFO">Typing text '654259017@webmail.npru.ac.th' into text field 'id=email'.</msg>
-<arg>id=email</arg>
-<arg>${Email_Webmail}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:20.341193" elapsed="0.353499"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:20.341193" elapsed="0.354500"/>
-</kw>
-<kw name="Input Checkbox">
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:20.699206" level="INFO">Executing JavaScript:
-document.getElementById('accept').click()
-Without any arguments.</msg>
-<arg>document.getElementById('accept').click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-03-30T03:21:20.698200" elapsed="0.016534"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:20.698200" elapsed="0.017538"/>
-</kw>
-<kw name="Click Button">
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:20.722255" level="INFO">Executing JavaScript:
-document.getElementById('submitbtn').click()
-Without any arguments.</msg>
-<arg>document.getElementById('submitbtn').click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-03-30T03:21:20.722255" elapsed="0.021064"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:20.722255" elapsed="0.022043"/>
-</kw>
-<kw name="Verify Signup Results">
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:20.781412" level="INFO">Current page contains text 'Submitting...'.</msg>
-<arg>Submitting...</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-03-30T03:21:20.760338" elapsed="0.021074"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:20.759325" elapsed="0.022087"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-30T03:21:20.782423" elapsed="2.696797"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:16.363475" elapsed="7.116718"/>
-</test>
-<test id="s1-t2" name="Check Invalid Name TH" line="50">
-<kw name="Open SignupForm">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:23.481455" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
-<arg>http://localhost:5173/</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-30T03:21:23.481455" elapsed="1.607712"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:23.481455" elapsed="1.607712"/>
-</kw>
-<kw name="Wait Until Page">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>id=root</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-30T03:21:25.090177" elapsed="0.239558"/>
-</kw>
-<status status="PASS" start="2024-03-30T03:21:25.089167" elapsed="0.241562"/>
+<status status="PASS" start="2024-04-12T00:10:31.386827" elapsed="0.013299"/>
 </kw>
 <kw name="TH information But Input EN">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:25.330729" level="INFO">Typing text 'Patiphat' into text field 'id=firstnameTha'.</msg>
+<msg time="2024-04-12T00:10:31.406973" level="INFO">Typing text 'Patiphat' into text field 'id=firstnameTha'.</msg>
 <arg>id=firstnameTha</arg>
 <arg>${Firstname_EN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:25.330729" elapsed="0.265196"/>
+<status status="PASS" start="2024-04-12T00:10:31.406456" elapsed="0.161500"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:25.596923" level="INFO">Typing text 'Rattanosot' into text field 'id=lastnameTha'.</msg>
+<msg time="2024-04-12T00:10:31.567956" level="INFO">Typing text 'Rattanosot' into text field 'id=lastnameTha'.</msg>
 <arg>id=lastnameTha</arg>
 <arg>${Lastname_EN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:25.595925" elapsed="0.229904"/>
+<status status="PASS" start="2024-04-12T00:10:31.567956" elapsed="0.118403"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:25.330729" elapsed="0.496101"/>
+<status status="PASS" start="2024-04-12T00:10:31.405446" elapsed="0.280913"/>
 </kw>
 <kw name="Click Space">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:25.826830" level="INFO">Clicking element 'id=root'.</msg>
+<msg time="2024-04-12T00:10:31.686359" level="INFO">Clicking element 'id=root'.</msg>
 <arg>id=root</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:25.826830" elapsed="0.055122"/>
+<status status="PASS" start="2024-04-12T00:10:31.686359" elapsed="0.041705"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:25.826830" elapsed="0.055122"/>
+<status status="PASS" start="2024-04-12T00:10:31.686359" elapsed="0.041705"/>
 </kw>
 <kw name="Verify Invalid Name_TH_Only">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:25.901987" level="INFO">Current page contains text 'Must be in Thai only'.</msg>
+<msg time="2024-04-12T00:10:31.738175" level="INFO">Current page contains text 'Must be in Thai only'.</msg>
 <arg>Must be in Thai only</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-03-30T03:21:25.882951" elapsed="0.019036"/>
+<status status="PASS" start="2024-04-12T00:10:31.728064" elapsed="0.010111"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:25.882951" elapsed="0.019036"/>
+<status status="PASS" start="2024-04-12T00:10:31.728064" elapsed="0.010111"/>
+</kw>
+<kw name="Screenshot Name TH">
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:31.869989" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Name_TH_Only.png"&gt;&lt;img src="Name_TH_Only.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>id=Invalid01</arg>
+<arg>Name_TH_Only.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-04-12T00:10:31.738175" elapsed="0.131814"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:31.738175" elapsed="0.131814"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-30T03:21:25.901987" elapsed="2.189693"/>
+<status status="PASS" start="2024-04-12T00:10:31.870989" elapsed="2.236671"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:23.481455" elapsed="4.611226"/>
+<status status="PASS" start="2024-04-12T00:10:29.646534" elapsed="4.461126"/>
 </test>
-<test id="s1-t3" name="Check In Valid Name EN" line="58">
+<test id="s1-t2" name="Check In Valid Name EN" line="61">
 <kw name="Open SignupForm">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:28.093680" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
-<arg>http://localhost:5173/</arg>
+<msg time="2024-04-12T00:10:34.107660" level="INFO">Opening browser 'Chrome' to base url 'https://signup-form-jet-chi.vercel.app/'.</msg>
+<arg>https://signup-form-jet-chi.vercel.app/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-30T03:21:28.093680" elapsed="2.014947"/>
+<status status="PASS" start="2024-04-12T00:10:34.107660" elapsed="1.608996"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:28.093680" elapsed="2.014947"/>
+<status status="PASS" start="2024-04-12T00:10:34.107660" elapsed="1.608996"/>
 </kw>
 <kw name="Wait Until Page">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=root</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-30T03:21:30.109694" elapsed="0.012535"/>
+<status status="PASS" start="2024-04-12T00:10:35.716656" elapsed="0.011950"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:30.109694" elapsed="0.012535"/>
+<status status="PASS" start="2024-04-12T00:10:35.716656" elapsed="0.011950"/>
 </kw>
 <kw name="EN information But Input TH">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:30.123226" level="INFO">Typing text 'ปฏิพัทธ์' into text field 'id=firstnameEng'.</msg>
+<msg time="2024-04-12T00:10:35.728606" level="INFO">Typing text 'ปฏิพัทธ์' into text field 'id=firstnameEng'.</msg>
 <arg>id=firstnameEng</arg>
 <arg>${Firstname_TH}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:30.123226" elapsed="0.201414"/>
+<status status="PASS" start="2024-04-12T00:10:35.728606" elapsed="0.146868"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:30.325636" level="INFO">Typing text 'รัตโนสถ' into text field 'id=lastnameEng'.</msg>
+<msg time="2024-04-12T00:10:35.875474" level="INFO">Typing text 'รัตโนสถ' into text field 'id=lastnameEng'.</msg>
 <arg>id=lastnameEng</arg>
 <arg>${Lastname_TH}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:30.324640" elapsed="0.235148"/>
+<status status="PASS" start="2024-04-12T00:10:35.875474" elapsed="0.108352"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:30.123226" elapsed="0.436562"/>
+<status status="PASS" start="2024-04-12T00:10:35.728606" elapsed="0.256215"/>
 </kw>
 <kw name="Click Space">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:30.579839" level="INFO">Clicking element 'id=root'.</msg>
+<msg time="2024-04-12T00:10:35.985832" level="INFO">Clicking element 'id=root'.</msg>
 <arg>id=root</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:30.579839" elapsed="0.085678"/>
+<status status="PASS" start="2024-04-12T00:10:35.985832" elapsed="0.033528"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:30.578830" elapsed="0.086687"/>
+<status status="PASS" start="2024-04-12T00:10:35.984821" elapsed="0.034539"/>
 </kw>
 <kw name="Verify Invalid Name_EN_Only">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:30.681200" level="INFO">Current page contains text 'Must be in English only'.</msg>
+<msg time="2024-04-12T00:10:36.036362" level="INFO">Current page contains text 'Must be in English only'.</msg>
 <arg>Must be in English only</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-03-30T03:21:30.665517" elapsed="0.015683"/>
+<status status="PASS" start="2024-04-12T00:10:36.019360" elapsed="0.017002"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:30.665517" elapsed="0.015683"/>
+<status status="PASS" start="2024-04-12T00:10:36.019360" elapsed="0.017002"/>
+</kw>
+<kw name="Screenshot Name EN">
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:36.173557" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Name_EN_Only.png"&gt;&lt;img src="Name_EN_Only.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>id=Invalid01</arg>
+<arg>Name_EN_Only.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-04-12T00:10:36.037351" elapsed="0.136206"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:36.037351" elapsed="0.137205"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-30T03:21:30.681200" elapsed="2.155728"/>
+<status status="PASS" start="2024-04-12T00:10:36.174832" elapsed="3.100601"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:28.092681" elapsed="4.744247"/>
+<status status="PASS" start="2024-04-12T00:10:34.107660" elapsed="5.168247"/>
 </test>
-<test id="s1-t4" name="Check In ID Card Valid" line="66">
+<test id="s1-t3" name="Check In Valid Name EN Lowercase" line="69">
 <kw name="Open SignupForm">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:32.838433" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
-<arg>http://localhost:5173/</arg>
+<msg time="2024-04-12T00:10:39.277376" level="INFO">Opening browser 'Chrome' to base url 'https://signup-form-jet-chi.vercel.app/'.</msg>
+<arg>https://signup-form-jet-chi.vercel.app/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-30T03:21:32.838433" elapsed="2.147556"/>
+<status status="PASS" start="2024-04-12T00:10:39.277376" elapsed="1.579957"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:32.838433" elapsed="2.148556"/>
+<status status="PASS" start="2024-04-12T00:10:39.277376" elapsed="1.580535"/>
 </kw>
 <kw name="Wait Until Page">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=root</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-30T03:21:34.991564" elapsed="0.022046"/>
+<status status="PASS" start="2024-04-12T00:10:40.857911" elapsed="0.009649"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:34.991564" elapsed="0.022046"/>
+<status status="PASS" start="2024-04-12T00:10:40.857911" elapsed="0.009649"/>
 </kw>
-<kw name="Input ID Card A_12 characters">
+<kw name="EN information But Input EN Lowercase">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:35.014611" level="INFO">Typing text 'A729800289811' into text field 'id=idCard'.</msg>
-<arg>id=idCard</arg>
-<arg>${IDcard_A_12}</arg>
+<msg time="2024-04-12T00:10:40.867560" level="INFO">Typing text 'patiphat' into text field 'id=firstnameEng'.</msg>
+<arg>id=firstnameEng</arg>
+<arg>${Firstname_EN_low}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:35.014611" elapsed="0.325939"/>
+<status status="PASS" start="2024-04-12T00:10:40.867560" elapsed="0.126828"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:35.014611" elapsed="0.325939"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:40.994388" level="INFO">Typing text 'rattanosot' into text field 'id=lastnameEng'.</msg>
+<arg>id=lastnameEng</arg>
+<arg>${Lastname_EN_low}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:10:40.994388" elapsed="0.110911"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:40.867560" elapsed="0.237816"/>
 </kw>
 <kw name="Click Space">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:35.341550" level="INFO">Clicking element 'id=root'.</msg>
+<msg time="2024-04-12T00:10:41.105376" level="INFO">Clicking element 'id=root'.</msg>
 <arg>id=root</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-30T03:21:35.341550" elapsed="0.055205"/>
+<status status="PASS" start="2024-04-12T00:10:41.105376" elapsed="0.026157"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:35.341550" elapsed="0.055205"/>
+<status status="PASS" start="2024-04-12T00:10:41.105376" elapsed="0.026157"/>
 </kw>
-<kw name="Verify Invalid IDcard_Only">
+<kw name="Verify Invalid Name_EN_Only">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-03-30T03:21:35.416639" level="INFO">Current page contains text 'number only'.</msg>
-<arg>number only</arg>
+<msg time="2024-04-12T00:10:41.252866" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-12T00:10:41.252866" level="FAIL">Page should have contained text 'Must be in English only' but did not.</msg>
+<arg>Must be in English only</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-03-30T03:21:35.398264" elapsed="0.018375"/>
+<status status="FAIL" start="2024-04-12T00:10:41.131533" elapsed="0.121333">Page should have contained text 'Must be in English only' but did not.</status>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:35.398264" elapsed="0.019375"/>
+<status status="FAIL" start="2024-04-12T00:10:41.131533" elapsed="0.121333">Page should have contained text 'Must be in English only' but did not.</status>
+</kw>
+<kw name="Screenshot Name EN Lowercase">
+<status status="NOT RUN" start="2024-04-12T00:10:41.252866" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-30T03:21:35.417639" elapsed="2.234514"/>
+<status status="NOT RUN" start="2024-04-12T00:10:41.252866" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-03-30T03:21:32.836928" elapsed="4.815225"/>
+<status status="FAIL" start="2024-04-12T00:10:39.276774" elapsed="1.976092">Page should have contained text 'Must be in English only' but did not.</status>
 </test>
-<status status="PASS" start="2024-03-30T03:21:16.202730" elapsed="21.450425"/>
+<test id="s1-t4" name="Check InValid ID Card" line="78">
+<kw name="Open SignupForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:41.268459" level="INFO">Opening browser 'Chrome' to base url 'https://signup-form-jet-chi.vercel.app/'.</msg>
+<arg>https://signup-form-jet-chi.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-12T00:10:41.268459" elapsed="1.686972"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:41.268459" elapsed="1.686972"/>
+</kw>
+<kw name="Wait Until Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-12T00:10:42.955431" elapsed="0.009335"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:42.955431" elapsed="0.009335"/>
+</kw>
+<kw name="Input ID Card A_12 characters">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:42.964766" level="INFO">Typing text 'A729800289811' into text field 'id=idCard'.</msg>
+<arg>id=idCard</arg>
+<arg>${IDcard_A_12}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:10:42.964766" elapsed="0.160244"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:42.964766" elapsed="0.160244"/>
+</kw>
+<kw name="Click Space">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:43.125010" level="INFO">Clicking element 'id=root'.</msg>
+<arg>id=root</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:10:43.125010" elapsed="0.042578"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:43.125010" elapsed="0.042578"/>
+</kw>
+<kw name="Verify Invalid IDcard_Only">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:43.187640" level="INFO">Current page contains text 'number only'.</msg>
+<arg>number only</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-12T00:10:43.173171" elapsed="0.014469"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:43.167588" elapsed="0.020052"/>
+</kw>
+<kw name="Screenshot ID Card">
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:43.309214" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="IDcard_Only.png"&gt;&lt;img src="IDcard_Only.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>id=Invalid01</arg>
+<arg>IDcard_Only.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-04-12T00:10:43.187640" elapsed="0.121574"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:43.187640" elapsed="0.121574"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-12T00:10:43.310190" elapsed="2.155556"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:41.268459" elapsed="4.197287"/>
+</test>
+<test id="s1-t5" name="Check InValid ID Card 12 characters" line="86">
+<kw name="Open SignupForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:45.465746" level="INFO">Opening browser 'Chrome' to base url 'https://signup-form-jet-chi.vercel.app/'.</msg>
+<arg>https://signup-form-jet-chi.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-12T00:10:45.465746" elapsed="1.566408"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:45.465746" elapsed="1.566408"/>
+</kw>
+<kw name="Wait Until Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-12T00:10:47.032154" elapsed="0.015387"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:47.032154" elapsed="0.015387"/>
+</kw>
+<kw name="Input ID Card 12 characters">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:47.048542" level="INFO">Typing text '172980028981' into text field 'id=idCard'.</msg>
+<arg>id=idCard</arg>
+<arg>${IDcard_12}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:10:47.048542" elapsed="0.179260"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:47.047541" elapsed="0.180477"/>
+</kw>
+<kw name="Click Space">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:47.228877" level="INFO">Clicking element 'id=root'.</msg>
+<arg>id=root</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:10:47.228353" elapsed="0.063288"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:47.228353" elapsed="0.063288"/>
+</kw>
+<kw name="Verify Invalid IDcard 12 characters">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:47.312155" level="INFO">Current page contains text 'Must be exactly 13 characters'.</msg>
+<arg>Must be exactly 13 characters</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-12T00:10:47.292638" elapsed="0.019517"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:47.291641" elapsed="0.021513"/>
+</kw>
+<kw name="Screenshot ID Card 12 characters">
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:47.431435" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="IDcard_Only_12_characters.png"&gt;&lt;img src="IDcard_Only_12_characters.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>id=Invalid01</arg>
+<arg>IDcard_Only_12_characters.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-04-12T00:10:47.313154" elapsed="0.118281"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:47.313154" elapsed="0.118281"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-12T00:10:47.431435" elapsed="2.089813"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:45.465746" elapsed="4.055502"/>
+</test>
+<test id="s1-t6" name="Check InValid Phone" line="94">
+<kw name="Open SignupForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:49.521248" level="INFO">Opening browser 'Chrome' to base url 'https://signup-form-jet-chi.vercel.app/'.</msg>
+<arg>https://signup-form-jet-chi.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-12T00:10:49.521248" elapsed="1.623458"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:49.521248" elapsed="1.623679"/>
+</kw>
+<kw name="Wait Until Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-12T00:10:51.144927" elapsed="0.014565"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:51.144927" elapsed="0.015566"/>
+</kw>
+<kw name="Input Phone 12 characters">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:51.161493" level="INFO">Typing text '080078156' into text field 'id=mobile'.</msg>
+<arg>id=mobile</arg>
+<arg>${Phone_number_&lt;10}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:10:51.160493" elapsed="0.191841"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:51.160493" elapsed="0.191841"/>
+</kw>
+<kw name="Click Space">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:51.352334" level="INFO">Clicking element 'id=root'.</msg>
+<arg>id=root</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:10:51.352334" elapsed="0.067576"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:51.352334" elapsed="0.067576"/>
+</kw>
+<kw name="Verify Invalid Phone">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:10:51.433232" level="INFO">Current page contains text 'Must be exactly 10 characters'.</msg>
+<arg>Must be exactly 10 characters</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-12T00:10:51.420912" elapsed="0.012320"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:51.419910" elapsed="0.013322"/>
+</kw>
+<kw name="Screenshot Phone 12 characters">
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:11:01.578330" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Phone_12_characters.png"&gt;&lt;img src="Phone_12_characters.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>id=Invalid02</arg>
+<arg>Phone_12_characters.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-04-12T00:10:51.434231" elapsed="10.144099"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:51.433232" elapsed="10.145098"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-12T00:11:01.579335" elapsed="2.109046"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:10:49.521248" elapsed="14.167133"/>
+</test>
+<test id="s1-t7" name="Check InValid Email" line="102">
+<kw name="Open SignupForm">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:11:03.688381" level="INFO">Opening browser 'Chrome' to base url 'https://signup-form-jet-chi.vercel.app/'.</msg>
+<arg>https://signup-form-jet-chi.vercel.app/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-12T00:11:03.688381" elapsed="1.875765"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:11:03.688381" elapsed="1.875765"/>
+</kw>
+<kw name="Wait Until Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-12T00:11:05.564146" elapsed="0.016694"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:11:05.564146" elapsed="0.016694"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:11:05.580840" level="INFO">Typing text '654259017@Gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${Email_Gmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:11:05.580840" elapsed="0.248807"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:11:05.580840" elapsed="0.249807"/>
+</kw>
+<kw name="Click Space">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:11:05.832663" level="INFO">Clicking element 'id=root'.</msg>
+<arg>id=root</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-12T00:11:05.832663" elapsed="0.037539"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:11:05.831663" elapsed="0.041270"/>
+</kw>
+<kw name="Verify Invalid Email">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:11:05.888942" level="INFO">Current page contains text 'Email must contain specific domain name'.</msg>
+<arg>Email must contain specific domain name</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-12T00:11:05.872933" elapsed="0.016009"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:11:05.872933" elapsed="0.016009"/>
+</kw>
+<kw name="Screenshot Email">
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-12T00:11:16.024216" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Email.png"&gt;&lt;img src="Email.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>id=Invalid02</arg>
+<arg>Email.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-04-12T00:11:05.889961" elapsed="10.134255"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:11:05.888942" elapsed="10.135274"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-12T00:11:16.025063" elapsed="2.109163"/>
+</kw>
+<status status="PASS" start="2024-04-12T00:11:03.688381" elapsed="14.445845"/>
+</test>
+<status status="FAIL" start="2024-04-12T00:10:29.476713" elapsed="48.657513"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="6" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="Reactform">Reactform</stat>
+<stat pass="6" fail="1" skip="0" id="s1" name="Reactform">Reactform</stat>
 </suite>
 </statistics>
 <errors>
